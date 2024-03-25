@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8015af404.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="logo"><span>A</span>darsh.</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <h3>Hello It's Me</h3>
+                <h1><span>Adarsh</span></h1>
+                <h3>I'am a <span id="typed"></span></h3>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a skilled full-stack developer with experience in front-end and back-end technologies. 
+                       I specialize in developing end-to-end applications that provide an optimal user experience.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links"onclick="opentab('education')">EDUCATION</p>
+                    </div>   
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing Web Apps.</li>
+                            <li><span>UI/UX </span><br>Designing Web/App Interfaces</li>
+                            <li><span>App Development</span><br>Android/IOS App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-present</span><br>Intern at KL</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2024</span><br>MCA from TKM College Of Engineering</li>
+                            <li><span>2019-2022</span><br>BSC Computer Science</li>
+                            <li><span>2017-2019</span><br>Higher Secondary Education</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1">
+                    <img src="images/profile1.jpeg" alt="not found">
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facilis eaque eveniet adipisci quasi ipsa illo quos b.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facilis eaque eveniet adipisci quasi ipsa illo quos b.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Facilis eaque eveniet adipisci quasi ipsa illo quos b.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Work Image"/>
+                    <div class="layer">
+                        <h3>Arrythmia Classification</h3>
+                        <p>Classiffies variations in heartbeat and <br>predict the class of Arrythmia using ecg  signals.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Work Image"/>
+                    <div class="layer">
+                        <h3>Find Teammates</h3>
+                        <p>Online portal for finding teammates <br> online for colaborating on projects</p>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Work Image"/>
+                    <div class="layer">
+                        <h3>Remote Device Management</h3>
+                        <p>Allows to moniter and manage Remote Devices also allows to execute commands remotely</p>
+                </div>
+            </div>
+        </div>
+     </div> -->
+<script src="script.js"></script>
+</body>
+</html>
